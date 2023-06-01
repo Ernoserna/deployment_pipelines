@@ -16,4 +16,4 @@ jobs:
       - name: Deploy to fly.io
         run: flyctl deploy
         env:
-          FLY_API_TOKEN: ${{ FLY_PIPELINE_TOKEN }}
+          FLY_API_TOKEN: ${{ secrets.FLY_PIPELINE_TOKEN }}
